@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Artyom Kurchenko](https://up.htmlacademy.ru/htmlcss/30/user/1654837).
-* Наставник: `Неизвестно`.
+* Наставник: [Святослав Галыгин](https://htmlacademy.ru/profile/id1209723).
 
 ---
 
