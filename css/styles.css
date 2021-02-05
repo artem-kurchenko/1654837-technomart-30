@@ -1,0 +1,359 @@
+/* Fonts */
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprum.woff2") format("woff2"), url("../fonts/cuprum.woff2") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprumbold.woff2") format("woff2"), url("../fonts/cuprumbold.woff2") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprumbolditalic.woff2") format("woff2"), url("../fonts/cuprumbolditalic.woff2") format("woff");
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url("../fonts/cuprumitalic.woff2") format("woff2"), url("../fonts/cuprumitalic.woff2") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsans.woff2") format("woff2"), url("../fonts/ptsans.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/ptsansbold.woff2") format("woff2"), url("../fonts/ptsansbold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Variables */
+
+:root {
+    --basic-extra-dark: #293449;
+    --basic-dark: #32425c;
+    --basic-dark-click: #1d2739;
+    --basic-neutral: #f1f5f7;
+    --basic-neutral-light: #f9f5f0;
+    --basic-white: #ffffff;
+    --basic-red: #ee3643;
+    --basic-red-hover: #ca2c37;
+    --basic-red-click: #ba2732;
+    --basic-black: #000000;
+    --basic-gray: #a9a9a9;
+    --basic-gray-light: #c5c5c5;
+    --basic-green: #63a63e;
+    --basic-green-click: #518534;
+    --basic-green-hover: #5fbb2d;
+    --basic-orange: #ffbf47;
+    --basic-orange-light: #ffd180;
+}
+
+/* Common Styles */
+
+.page-body {
+    margin: 0;
+    padding: 0;
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    min-width: 940px;
+    color: var(--basic-white);
+    background-color: var(--basic-white);
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+}
+
+.button-red {
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    background-color: var(--basic-red);
+    color: var(--basic-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 192px;
+    height: 38px;
+    outline: none;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+}
+.button-red:hover {
+    background-color: var(--basic-red-hover);
+}
+.button-red:active {
+    background-color: var(--basic-red-click);
+}
+
+.link-new {
+    background-color: var(--basic-red);
+}
+
+/* Top menu */
+
+.header-menu {
+    background-color: var(--basic-extra-dark);
+}
+.header-content {
+    background-color: var(--basic-neutral);
+}
+
+.header-menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--basic-green);
+    color: var(--basic-white);
+    height: 42px;
+    width: 150px;
+    padding: 0px;
+}
+.header-menu-button:hover {
+    background-color: var(--basic-green-hover);
+}
+
+.header-menu-button:active {
+    background-color: var(--basic-green-click);
+}
+
+.header-menu-button h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
+}
+
+.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 45px;
+    padding: 0px;
+}
+.header-button:hover {
+    color: var(--basic-red);
+}
+.header-button:hover .login-icon {
+    filter: invert(100%) ;
+}
+.header-button:active {
+    color: var(--basic-gray-light);
+}
+
+.enter-button {
+    width: 121px;
+}
+.signup-buton {
+    width: 150px;
+}
+.page-header-logo {
+    background-color: var(--basic-red);
+}
+.header-content-text {
+    color: var(--basic-red);
+    font-style: italic;
+    font-size: 16px;
+    line-height: 23px;
+}
+.phone-item {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 30px;
+    color: var(--basic-red);
+}
+.header-content-text-small {
+    font-size: 14px;
+    color: var(--basic-black);
+}
+.header-navigation {
+    background-color: var(--basic-dark);
+}
+
+/*Cards block */
+
+.card-title {
+    font-weight: 700;
+    line-height: 30px;
+}
+.card-link {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.card-orange {
+    background-color: var(--basic-orange);
+}
+.card-blue {
+    background-color: #3bbce3;
+}
+.card-violet {
+    background-color: #dc91d8;
+}
+.card-green {
+    background-color: var(--basic-green);
+}
+
+/* Slider */
+
+.slider-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+/* Content Styles */
+
+.content-container {
+    background-color: var(--basic-neutral-light);
+}
+.content-title {
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--basic-black);
+}
+
+/* Cards with items */
+.card {
+    border: 1px solid #eaeaea;
+}
+.content-list {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: 700;
+}
+.list-item p {
+    line-height: 20px;
+    text-align: center;
+    color: var(--basic-black);
+}
+.list-item s {
+    font-size: 17px;
+    display: block;
+    color: var(--basic-gray);
+}
+
+.list-item button.button-red {
+    font-size: 17px;
+    line-height: 18px;
+    width: 141px;
+}
+
+/* contacts, shipment, and services */
+.content-text {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+    color: var(--basic-black);
+}
+
+.services-item {
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 700;
+    background-color: var(--basic-dark);
+}
+.services-item:active {
+    color: var(--basic-dark);
+    background-color: var(--basic-white);
+}
+.partners-item {
+    color: var(--basic-black);
+}
+
+.partners a.button-red {
+    width: 200px;
+}
+.contacts a.button-red {
+    width: 300px;
+}
+
+/*footer*/
+.button-logo {
+    display: block;
+    margin: 0 auto;
+    width: 220px;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+}
+.button-logo img {
+    vertical-align: middle;
+}
+.first-footer {
+    background-color: var(--basic-dark);
+}
+.second-footer {
+    background-color: var(--basic-extra-dark);
+}
+.text-orange {
+    color: var(--basic-orange-light);
+}
+.menu-text-small {
+    font-size: 16px;
+    line-height: 18px;
+}
+.social-button {
+    display: inline-block;
+    width: 44px;
+    text-align: center;
+    line-height: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: linear-gradient(0deg, #212a3a, #212a3a);
+}
+.social-button img {
+    vertical-align: middle;
+}
+.social-button:hover {
+    background-color: var(--basic-red-hover);
+}
+.social-button:active {
+    background-color: var(--basic-red-click);
+}
+
+/* modal windows  */
+
+.modal {
+    color: var(--basic-black);
+}
+
+.feedback-item input,
+textarea {
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 13px;
+}
+.feedback-item input {
+    border: 2px solid #c5c5c5;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
