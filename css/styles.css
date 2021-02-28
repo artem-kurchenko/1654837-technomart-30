@@ -760,6 +760,7 @@ img {
 }
 .services-item:hover {
     background-color: var(--basic-extra-dark);
+    color: var(--basic-white);
 }
 .services-item-active {
     box-shadow: 0px 1px 0px var(--basic-white);
