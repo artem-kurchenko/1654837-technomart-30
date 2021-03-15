@@ -137,11 +137,6 @@ img {
     overflow: hidden;
 }
 
-.link-new {
-    background-color: var(--basic-red);
-    color: var(--basic-white);
-    font-weight: normal;
-}
 .container {
     width: 940px;
     box-sizing: border-box;
@@ -158,9 +153,9 @@ img {
     background-color: var(--basic-neutral);
 }
 .page-header-logo {
-    text-decoration: none;
-    width: 220px;
     height: 47px;
+    width: 220px;
+    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 .header-menu {
     height: 42px;
@@ -713,13 +708,12 @@ img {
 
 .content-wrapper {
     background-color: var(--basic-neutral);
-    height: 522px;
     margin-top: 70px;
 }
 
 .shipment {
     padding: 20px 0px;
-    margin-top: 60px;
+
     margin-bottom: 60px;
 }
 .shipment h2 {
@@ -776,18 +770,19 @@ img {
 .services-desc-item {
     position: relative;
 }
+.services-desc-item a.button {
+    margin-top: 30px;
+}
+
 .services-desc-list h2 {
     margin-left: 0px;
     margin-top: 0px;
 }
-.services-desc-item p {
-    float: left;
-    margin: 0px;
-}
+
 .services-desc-item img {
     position: absolute;
     right: 0px;
-    top: 10px;
+    top: 0px;
 }
 
 .section-partners {
@@ -940,12 +935,11 @@ img {
 .social-button img {
     vertical-align: middle;
 }
-.social-button:hover {
-    background: var(--basic-red-hover);
-}
+.social-button:hover,
 .social-button:active {
-    background: var(--basic-red-click);
+    background: var(--basic-red);
 }
+
 .footer-item a {
     color: var(--basic-orange-light);
 }
@@ -1129,16 +1123,39 @@ img {
 }
 
 .breadcrumbs {
+    margin-left: 14px;
     display: flex;
     flex-wrap: wrap;
     grid-column: 1/-1;
 }
+
 .breadcrumbs li {
-    margin-right: 20px;
+    position: relative;
+    margin-right: 40px;
 }
-.breadcrumbs-image-item {
-    display: flex;
-    align-items: center;
+
+.breadcrumbs-item::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: -25px;
+    width: 8px;
+    height: 12px;
+    background: url("../img/icon-right-small.svg");
+}
+
+.breadcrumbs li:last-child {
+    margin-right: 0;
+}
+
+.breadcrumbs-item-first a::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    width: 14px;
+    height: 12px;
+    background: url("../img/icon-home.svg");
 }
 
 .catalog-container {
@@ -1202,6 +1219,7 @@ img {
     color: var(--basic-red);
     text-decoration: none;
 }
+
 .catalog-table-header li.active svg {
     fill: var(--basic-red);
 }

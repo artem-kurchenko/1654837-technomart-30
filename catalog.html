@@ -24,7 +24,8 @@
                     </li>
                     <li class="search-item">
                         <img class="menu-icon" src="img/icon-search.svg" width="17" height="17" alt="search-icon" />
-                        <input class="search-input menu-text" placeholder="Поиск" type="text" />
+                        <label class="visually-hidden" for="search">Search</label>
+                        <input id="search" class="search-input menu-text" placeholder="Поиск" type="text" />
                     </li>
                     <li class="bookmark-item">
                         <h2 class="header-menu-button">
@@ -102,17 +103,20 @@
     <main class="catalog-main-content">
         <section class="container catalog-table">
             <ul class="list content-text-small breadcrumbs">
-                <li class="breadcrumbs-image-item"> <img src="img/icon-home.svg" alt="home-icon" height="12"
-                        width="14" /></li>
-                <li class="breadcrumbs-image-item"> <img src="img/icon-right-small.svg" alt="right-arrow" height="12"
-                        width="8" /></li>
-                <li> <a class="link" href="catalog.html">Каталог</a></li>
-                <li class="breadcrumbs-image-item"> <img src="img/icon-right-small.svg" alt="right-arrow" height="12"
-                        width="8" /></li>
-                <li> <a class="link" href="blank.html">Инструмент</a></li>
-                <li class="breadcrumbs-image-item"> <img src="img/icon-right-small.svg" alt="right-arrow" height="12"
-                        width="8" /></li>
-                <li> Перфораторы</li>
+                <li class="breadcrumbs-item breadcrumbs-item-first">
+                    <a class="link" href="index.html">
+                    </a>
+                </li>
+
+                <li class="breadcrumbs-item">
+                    <a class="link" href="catalog.html">Каталог</a>
+                </li>
+                <li class="breadcrumbs-item">
+                    <a class="link" href="blank.html">Инструмент</a>
+                </li>
+                <li class="breadcrumbs-item-current">
+                    Перфораторы
+                </li>
             </ul>
             <div class="content-container catalog-container">
                 <h2 class="content-title">ПЕРФОРАТОРЫ</h2>
@@ -120,18 +124,22 @@
             <div class="catalog-table-header content-text-small">ФИЛЬТР:</div>
             <ul class="list catalog-table-header content-text-small">
                 <li class="table-header-item ">СОРТИРОВКА:</li>
-                <li class="table-header-item active">ПО ЦЕНЕ:</li>
-                <li class="table-header-item">ПО ТИПУ:</li>
-                <li class="table-header-item">ПО ФУНКЦИОНАЛУ:</li>
+                <li class="table-header-item active"> <a class="link" href="#"> ПО ЦЕНЕ: </a></li>
+                <li class="table-header-item"> <a class="link" href="#"> ПО ТИПУ: </a></li>
+                <li class="table-header-item"> <a class="link" href="#"> ПО ФУНКЦИОНАЛУ: </a></li>
                 <li class="table-header-item active">
-                    <svg width="11" height="10" viewBox="0 0 11 10" fill="gray" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5 0L11 10L0 10" />
-                    </svg>
+                    <a class="link" href="#">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 0L11 10L0 10" />
+                        </svg>
+                    </a>
                 </li>
                 <li class="table-header-item">
-                    <svg width="11" height="10" viewBox="0 0 11 10" fill="gray" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5 0L11 10L0 10" />
-                    </svg>
+                    <a class="link" href="#">
+                        <svg width="11" height="10" viewBox="0 0 11 10" fill="gray" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 0L11 10L0 10" />
+                        </svg>
+                    </a>
                 </li>
             </ul>
             <section class="filter-panel">
@@ -233,7 +241,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG6000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg6000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 6000
@@ -249,7 +257,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG6000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg6000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 6000
@@ -265,7 +273,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG6000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg6000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 6000
@@ -281,7 +289,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG3000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg3000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 3000
@@ -297,7 +305,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG6000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg6000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 6000
@@ -313,7 +321,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG2000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg2000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 2000
@@ -329,7 +337,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG3000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg3000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 3000
@@ -345,7 +353,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG6000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg6000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 6000
@@ -361,7 +369,7 @@
                             <span> КУПИТЬ </span>
                         </button>
                         <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
-                        <img class="picture" width="144" height="128" src="img/BoshBFG2000.png" alt="item" />
+                        <img class="picture" width="144" height="128" src="img/boshbfg2000.jpg" alt="item" />
                     </div>
                     <div class="card-price">
                         <p>Перфоратор BOSCH<br>BFG 2000
@@ -439,13 +447,19 @@
                 <section class="footer-social">
                     <h3 class="visually-hidden">Coциальные сети</h3>
                     <ul class="list">
-                        <li class="button social-button">
-                            <img src="img/icon-vk.svg" alt="vk" width="26" height="15" />
+                        <li>
+                            <a href="#" class="link button social-button">
+                                <img src="img/icon-vk.svg" alt="vk" width="26" height="15" />
+                            </a>
                         </li>
-                        <li class="button social-button">
-                            <img src="img/icon-fb.svg" alt="fb" width="12" height="22" />
-                        <li class="button social-button">
-                            <img src="img/icon-insta.svg" alt="inst" width="21" height="21" />
+                        <li>
+                            <a href="#" class="link button social-button">
+                                <img src="img/icon-fb.svg" alt="fb" width="12" height="22" />
+                            </a>
+                        <li>
+                            <a href="#" class="link button social-button">
+                                <img src="img/icon-insta.svg" alt="inst" width="21" height="21" />
+                            </a>
                         </li>
                     </ul>
                 </section>
