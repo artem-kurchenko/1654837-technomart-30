@@ -114,6 +114,9 @@ img {
     font-weight: normal;
     background-color: var(--basic-red);
     color: var(--basic-white);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
     width: 192px;
     height: 38px;
 }
@@ -308,8 +311,8 @@ img {
     align-items: center;
     padding: 0px;
     margin: 0px;
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 21px;
+    line-height: 21px;
     font-weight: normal;
 }
 
@@ -608,15 +611,16 @@ img {
     display: flex;
     gap: 10px;
 }
-.bottom-slider-controls div:first-child a {
+.button-wrapper a {
     margin-left: 30px;
+    
 }
 .slider-buttons button {
     padding: 0;
     width: 10px;
     height: 10px;
-    background-color: white;
-    border: 2px solid #ffffff;
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-white);
     border-radius: 50%;
     cursor: pointer;
 }
@@ -637,6 +641,7 @@ img {
 }
 
 .content-title {
+    font-family: "Cuprum", "Arial", sans-serif;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
@@ -1131,13 +1136,14 @@ img {
 
 .breadcrumbs li {
     position: relative;
+    text-transform: uppercase;
     margin-right: 40px;
 }
 
 .breadcrumbs-item::after {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: -25px;
     width: 8px;
     height: 12px;
@@ -1151,7 +1157,7 @@ img {
 .breadcrumbs-item-first a::before {
     content: "";
     position: absolute;
-    top: 3px;
+    top: 2px;
     right: 0px;
     width: 14px;
     height: 12px;
@@ -1236,6 +1242,7 @@ img {
 }
 .catalog-info h2 {
     padding: 0;
+    margin-left: 0;
     margin-top: 60px;
 }
 .content-text-small {
