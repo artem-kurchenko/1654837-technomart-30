@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html class="page" lang="ru">
 
 <head>
@@ -19,25 +19,31 @@
           <li>
             <h1 class="visually-hidden">Техномарт</h1>
             <a class="button button-red page-header-logo" href="index.html">
-              <img class="header-logo-icon" src="img/logo-technomart.svg" width="108" heigh="18" alt="logo"></img>
+              <img class="header-logo-icon" src="img/logo-technomart.svg" width="108" height="18" alt="header-logo" />
             </a>
           </li>
           <li class="search-item">
-            <img class="menu-icon" src="img/icon-search.svg" width="17" height="17"></img>
+            <img class="menu-icon" src="img/icon-search.svg" width="17" height="17" alt="search-icon" />
             <input class="search-input menu-text" placeholder="Поиск" type="text" />
           </li>
           <li class="bookmark-item">
-            <img class="menu-icon" src="img/icon-bookmark.svg" width="14" height="16"></img>
-            <span class="menu-text">Закладки: 0</span>
+            <h2 class="header-menu-button">
+              <img class="menu-icon" src="img/icon-bookmark.svg" width="14" height="16" alt="bookmark-icon" />
+              <span class="menu-text">Закладки: 0</span>
+            </h2>
           </li>
           <li class="cart-item">
-            <img class="menu-icon" src="img/icon-cart.svg" width="15" height="15"></img>
-            <span class="menu-text">Корзина: 0</span>
+            <h2 class="header-menu-button">
+              <img class="menu-icon" src="img/icon-cart.svg" width="15" height="15" alt="cart-icon">
+              <span class="menu-text">Корзина: 0</span>
+            </h2>
           </li>
           <li class="button-item">
-            <button type="submit" class="button header-menu-button button-order">
-              <h2>Оформить заказ</h2>
-            </button>
+            <h2 class="header-menu-button">
+              <button type="submit" class="button button-order">
+                Оформить заказ
+              </button>
+            </h2>
           </li>
         </ul>
       </section>
@@ -52,7 +58,7 @@
           </li>
           <li class="tel-container">
             <a class="link button phone-item" href="tel:+78125550555">
-              <img class="phone-icon" src="img/icon-phone.svg" width="19" height="19" />
+              <img class="phone-icon" src="img/icon-phone.svg" alt="phone-icon" width="19" height="19" />
               <span>+7 (812) 555-05-55 </span>
             </a>
             <p class="header-content-text-small">
@@ -61,15 +67,17 @@
           </li>
           <li>
             <div class="button-container">
-              <button class="button header-menu-button enter-button">
-                <img class="login-icon" src="img/icon-login.svg" width="20" height="17"></img>
-                <h2>
-                  Boйти
-                </h2>
-              </button>
-              <button class="button header-menu-button signup-button">
-                <h2>Регистрация</h2>
-              </button>
+              <h2 class="header-menu-button">
+                <button class="button enter-button">
+                  <img class="login-icon" src="img/icon-login.svg" alt="login-icon" width="20" height="17" />
+                  <span>Boйти</span>
+                </button>
+              </h2>
+              <h2 class="header-menu-button">
+                <button class="button signup-button">
+                  Регистрация
+                </button>
+              </h2>
             </div>
           </li>
         </ul>
@@ -100,7 +108,7 @@
           </a>
         </div>
         <div>
-          <img class="card-icon" width="44" height="65" src="img/materials.svg" alt="materials"></img>
+          <img class="card-icon" width="44" height="65" src="img/materials.svg" alt="materials" />
         </div>
       </div>
       <div class="card card-blue" id="instruments">
@@ -111,7 +119,7 @@
           </a>
         </div>
         <div>
-          <img class="card-icon" width="75" height="61" src="img/instruments.svg" alt="instruments"></img>
+          <img class="card-icon" width="75" height="61" src="img/instruments.svg" alt="instruments" />
         </div>
       </div>
       <div class="card card-violet" id="vehicles">
@@ -122,7 +130,7 @@
           </a>
         </div>
         <div>
-          <img class="card-icon" width="78" height="62" src="img/vehicles.svg" alt="vehicles"></img>
+          <img class="card-icon" width="78" height="62" src="img/vehicles.svg" alt="vehicles" />
         </div>
       </div>
       <div class="card card-green" id="discounts">
@@ -133,7 +141,7 @@
           </a>
         </div>
         <div>
-          <img class="card-icon" width="59" height="72" src="img/discounts.svg" alt="discounts"></img>
+          <img class="card-icon" width="59" height="72" src="img/discounts.svg" alt="discounts" />
         </div>
       </div>
       <div class="card card-orange">
@@ -144,27 +152,27 @@
           </a>
         </div>
         <div>
-          <img class="card-icon" width="78" height="63" src="img/shipment.svg" alt="shipment"></img>
+          <img class="card-icon" width="78" height="63" src="img/shipment.svg" alt="shipment" />
         </div>
       </div>
       <div class="slider-container image-1">
         <!-- Здесь будет слайдер -->
         <ul class="list slider-list">
           <li class="slider-item slide-current">
-            <h3 class="slider-title">ПЕРФОРАТОРЫ</h2>
+            <h3 class="slider-title">ПЕРФОРАТОРЫ</h3>
               <p>Настоящие мужские игрушки</p>
           </li>
           <li class="slider-item">
-            <h3 class="slider-title">ДРЕЛИ</h2>
+            <h3 class="slider-title">ДРЕЛИ</h3>
               <p>Соседям на радость!</p>
           </li>
         </ul>
 
         <div class="side-slider-controls">
-          <button type="button" class="button" alt="first promo"> <img class="nav-icon-left" width="22" height="44"
-              src="img/icon-left.svg"></img></button>
-          <button type="button" class="button" alt="second promo"> <img class="nav-icon-right" width="22" height="44"
-              src="img/icon-left.svg"></img></button>
+          <button type="button" class="button"> <img class="nav-icon-left" alt="left-icon" width="22" height="44"
+              src="img/icon-left.svg" /></button>
+          <button type="button" class="button" > <img class="nav-icon-right" width="22" height="44" alt="right-icon"
+              src="img/icon-left.svg" /></button>
         </div>
         <div class="bottom-slider-controls">
           <div>
@@ -173,8 +181,8 @@
             </a>
           </div>
           <div class="slider-buttons">
-            <button type="button" class="button" alt="first promo"> </button>
-            <button type="button" class="button current" alt="second promo"> </button>
+            <button type="button" class="button"> </button>
+            <button type="button" class="button current" > </button>
           </div>
         </div>
 
@@ -191,14 +199,14 @@
           <li class="card large-card">
             <div class="card-buttons">
               <button class="button button-buy" type="button">
-                <img src="img/icon-cart.svg" width="15" height="15" />
+                <img src="img/icon-cart.svg" alt="cart" width="15" height="15" />
                 <span> КУПИТЬ </span>
               </button>
               <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
               <img class="picture" width="184" height="164" src="img/BoshBFG9000.png" alt="item" />
             </div>
             <div class="card-price">
-              <p>Перфоратор BOSCH</br>BFG 9000
+              <p>Перфоратор BOSCH<br>BFG 9000
                 <s>32500 P.</s>
               </p>
               <button class="button button-price">22500 P.</button>
@@ -207,14 +215,14 @@
           <li class="card large-card new-card">
             <div class="card-buttons">
               <button class="button button-buy" type="button">
-                <img src="img/icon-cart.svg" width="15" height="15" />
+                <img src="img/icon-cart.svg"  alt="cart" width="15" height="15" />
                 <span> КУПИТЬ </span>
               </button>
               <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
               <img class="picture" width="127" height="112" src="img/BoshBFG3000.png" alt="item" />
             </div>
             <div class="card-price">
-              <p>Перфоратор BOSCH</br>BFG 3000
+              <p>Перфоратор BOSCH<br>BFG 3000
                 <s>22500 P.</s>
               </p>
               <button class="button button-price">15500 P.</button>
@@ -223,14 +231,14 @@
           <li class="card large-card">
             <div class="card-buttons">
               <button class="button button-buy" type="button">
-                <img src="img/icon-cart.svg" width="15" height="15" />
+                <img src="img/icon-cart.svg" alt="cart" width="15" height="15" />
                 <span> КУПИТЬ </span>
               </button>
               <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
               <img class="picture" width="144" height="128" src="img/BoshBFG6000.png" alt="item" />
             </div>
             <div class="card-price">
-              <p>Перфоратор BOSCH</br>BFG 6000
+              <p>Перфоратор BOSCH<br>BFG 6000
                 <s>30500 P.</s>
               </p>
               <button class="button button-price">25500 P.</button>
@@ -239,14 +247,14 @@
           <li class="card large-card new-card">
             <div class="card-buttons">
               <button class="button button-buy" type="button">
-                <img src="img/icon-cart.svg" width="15" height="15" />
+                <img src="img/icon-cart.svg" alt="cart" width="15" height="15" />
                 <span> КУПИТЬ </span>
               </button>
               <button class="button button-bookmark" type="button">В ЗАКЛАДКИ</button>
               <img class="picture" width="127" height="112" src="img/BoshBFG2000.png" alt="item" />
             </div>
             <div class="card-price">
-              <p>Перфоратор BOSCH</br>BFG 2000
+              <p>Перфоратор BOSCH<br>BFG 2000
                 <s>22500 P.</s>
               </p>
               <button class="button button-price">12500 P.</button>
@@ -279,7 +287,7 @@
         </div>
         <div class="card">
           <a href="blank.html">
-            <img width="200" height="76" src="img/Интерскол 1.png" alt="interskol" />
+            <img width="200" height="76" src="img/Interskol.png" alt="interskol" />
           </a>
         </div>
         <div class="card">
@@ -309,7 +317,7 @@
         <section class="shipment">
           <h2 class="content-title">СЕРВИСЫ</h2>
           <p class="content-text">
-            Хороший интернет-магазин отличается от плохого не только ценами! </br>
+            Хороший интернет-магазин отличается от плохого не только ценами! <br>
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </section>
@@ -326,10 +334,10 @@
                 ДОСТАВКА
               </h2>
               <p class="content-text">
-                Мы с удовольствием доставим ваш товар прямо </br>
-                к вашему подъезду совершенно бесплатно! </br>
-                Ведь мы неплохо заработаем, </br>
-                поднимая его на ваш этаж! </br>
+                Мы с удовольствием доставим ваш товар прямо <br>
+                к вашему подъезду совершенно бесплатно! <br>
+                Ведь мы неплохо заработаем, <br>
+                поднимая его на ваш этаж! <br>
               </p>
               <img width="468" height="261" src="img/lorry.png" alt="lorry" />
             </li>
@@ -339,10 +347,10 @@
                   ГАРАНТИЯ
                 </h2>
                 <p class="content-text">
-                  Если купленный у нас товар поломается или заискрит, </br>
-                  а также в случае пожара, спровоцированного его </br>
-                  возгоранием, вы всегда можете быть уверены в нашей </br>
-                  гарантии. Мы обменяем сгоревший товар на новый. </br>
+                  Если купленный у нас товар поломается или заискрит, <br>
+                  а также в случае пожара, спровоцированного его <br>
+                  возгоранием, вы всегда можете быть уверены в нашей <br>
+                  гарантии. Мы обменяем сгоревший товар на новый. <br>
                   Дом уж восстановите как-нибудь сами.
                 </p>
               </div>
@@ -353,7 +361,7 @@
                 КРЕДИТ
               </h2>
               <p class="content-text">
-                Залезть в долговую яму стало проще! </br>
+                Залезть в долговую яму стало проще! <br>
                 Кредитные консультанты придут вам на помощь.
               </p>
               <img width="465" height="285" src="img/credit.png" alt="credit" />
@@ -389,7 +397,7 @@
           КОНТАКТЫ
         </h2>
         <p class="content-text">
-          Вы можете забрать товар сами, </br>
+          Вы можете забрать товар сами, <br>
           заехав в наш офис:</p>
         <div class="map">
           <img class="map-image" src="img/map.jpg" alt="map" width="300" height="158" />
@@ -413,10 +421,11 @@
         </div>
       </section>
       <section class="modal feedback-window">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="window-container">
           <div class="window-title-line"></div>
           <button class="button icon-close" type="button">
-            <img width="21" height="21" src="img/icon-close.svg" />
+            <img width="21" alt="close" height="21" src="img/icon-close.svg" />
           </button>
         </div>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
@@ -447,10 +456,10 @@
     <section class="first-footer">
       <div class="container">
         <a class="link button button-red button-logo" href="index.html">
-          <img src="img/logo-technomart.svg" width="138" height="23" alt="footer-logo"></img>
+          <img src="img/logo-technomart.svg" width="138" height="23" alt="footer-logo" />
         </a>
         <p class="menu-text">
-          г. Санкт-Петербург, Б. Конюшенная, д. 19/8 </br>
+          г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
           +7 (812) 555-05-55
         </p>
         <nav>
@@ -475,36 +484,34 @@
     <section class="second-footer">
       <div class="container">
         <h3 class="menu-text-small">
-          © 2010–2019 Компания «Техномарт» </br>
+          © 2010–2019 Компания «Техномарт» <br>
           Все права защищены
         </h3>
         <section class="footer-social">
           <!-- Здесь будут кнопки соц. сетей -->
+          <h3 class="visually-hidden">Coциальные сети</h3>
           <ul class="list">
             <li class="button social-button">
-              <img src="img/icon-vk.svg" width="26" height="15" />
+              <img src="img/icon-vk.svg" alt="vk" width="26" height="15" />
             </li>
             <li class="button social-button">
-              <img src="img/icon-fb.svg" width="12" height="22" />
+              <img src="img/icon-fb.svg" alt="fb" width="12" height="22" />
             <li class="button social-button">
-              <img src="img/icon-insta.svg" width="21" height="21" />
+              <img src="img/icon-insta.svg" alt="inst" width="21" height="21" />
             </li>
           </ul>
         </section>
         <p class="footer-item menu-text-small">
-          Обратная связь: </br>
+          Обратная связь: <br>
           <a class="link" href="mailto:fakemail@example.com">mail@htmlacademy.ru</a>
         </p>
         <p class="footer-item menu-text-small">
-          Разработано — </br>
+          Разработано — <br>
           <a class="link" href="https://htmlacademy.ru">htmlacademy.ru</a>
         </p>
       </div>
     </section>
   </footer>
-
-
-  </form>
 </body>
 
 </html>

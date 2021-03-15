@@ -265,6 +265,8 @@ img {
     align-self: baseline;
 }
 .button-order {
+    height: 42px;
+    width: 150px;
     background-color: var(--basic-green);
     color: var(--basic-white);
 }
@@ -307,15 +309,13 @@ img {
     align-content: flex-start;
 }
 .header-menu-button {
-    height: 42px;
-    width: 150px;
+    display: flex;
+    align-items: center;
     padding: 0px;
-}
-.header-menu-button h2 {
+    margin: 0px;
     font-size: 18px;
     line-height: 24px;
     font-weight: normal;
-    margin: 0px;
 }
 
 .enter-button:hover {
@@ -331,24 +331,31 @@ img {
 
 .enter-button {
     width: 121px;
+    height: 45px;
     margin-right: 10px;
 }
-.signup-buton {
+.signup-button {
+    padding: 0px;
+    height: 45px;
     width: 150px;
 }
-.enter-button h2 {
+.enter-button {
     margin-left: 5px;
+    padding: 0px;
     color: var(--basic-dark);
 }
-.enter-button:hover h2,
-.signup-button:hover h2 {
+.enter-button:hover,
+.signup-button:hover {
     color: var(--basic-red);
+}
+.enter-button img {
+    margin-right: 5px;
 }
 .enter-button:hover img {
     filter: invert(1);
 }
-.enter-button:active h2,
-.signup-button:active h2 {
+.enter-button:active,
+.signup-button:active {
     color: var(--basic-gray);
 }
 .enter-button:active img {
@@ -366,13 +373,12 @@ img {
 .enter-button-large:focus span {
     color: var(--basic-gray-light);
 }
-.enter-button img.phone-icon {
+.enter-button-large img.user-icon {
     margin-right: 20px;
 }
-.enter-button img.login-icon {
+.enter-button-large img.login-icon {
     margin-left: 20px;
 }
-
 .page-header-logo {
     background-color: var(--basic-red);
 }
@@ -983,7 +989,7 @@ img {
 }
 .window-container button.icon-close {
     position: absolute;
-    right: 5px;
+    right: 0px;
     top: 5px;
 }
 .window-container iframe {
@@ -1059,6 +1065,7 @@ img {
     float: right;
     background-color: inherit;
     margin-top: 10px;
+    margin-right: 10px;
 }
 /* modal basket window */
 
@@ -1072,7 +1079,7 @@ img {
 }
 
 .info-content {
-    margin: 30px 0px 30px 0px;
+    margin: 40px 0px 40px 0px;
     display: flex;
     justify-content: center;
     gap: 30px;
