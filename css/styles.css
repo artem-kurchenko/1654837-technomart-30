@@ -311,17 +311,13 @@ img {
     align-items: center;
     padding: 0px;
     margin: 0px;
-    font-size: 21px;
-    line-height: 21px;
+
+    font-style: normal;
     font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
 }
 
-.enter-button:hover {
-    color: var(--basic-red);
-}
-.enter-button:hover img {
-    filter: invert(100%);
-}
 .enter-button:active,
 .enter-button:focus {
     color: var(--basic-gray-light);
@@ -330,18 +326,20 @@ img {
 .enter-button {
     width: 121px;
     height: 45px;
-    margin-right: 10px;
+    padding: 0px;
+    color: var(--basic-dark);
+    font-size: 21px;
+    line-height: 21px;
 }
+
 .signup-button {
+    font-size: 21px;
+    line-height: 21px;
     padding: 0px;
     height: 45px;
     width: 150px;
 }
-.enter-button {
-    margin-left: 5px;
-    padding: 0px;
-    color: var(--basic-dark);
-}
+
 .enter-button:hover,
 .signup-button:hover {
     color: var(--basic-red);
@@ -350,8 +348,9 @@ img {
     margin-right: 5px;
 }
 .enter-button:hover img {
-    filter: invert(1);
+    filter: invert(100%);
 }
+
 .enter-button:active,
 .signup-button:active {
     color: var(--basic-gray);
@@ -377,9 +376,7 @@ img {
 .enter-button-large img.login-icon {
     margin-left: 20px;
 }
-.page-header-logo {
-    background-color: var(--basic-red);
-}
+
 .header-content-text {
     color: var(--basic-red);
     font-style: italic;
@@ -447,6 +444,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    box-shadow: inset 0px -5px 0px #293449;
 }
 
 .navigation-menu li:first-child {
@@ -613,7 +611,6 @@ img {
 }
 .button-wrapper a {
     margin-left: 30px;
-    
 }
 .slider-buttons button {
     padding: 0;
@@ -1528,8 +1525,8 @@ img {
 
 .pager {
     grid-column: 2;
-    width: 284px;
     display: flex;
+    flex-wrap: wrap;
 }
 .pager li {
     margin-right: 10px;
@@ -1542,6 +1539,8 @@ img {
     height: 38px;
     box-sizing: border-box;
     border-radius: 2px;
+    font-size: 13px;
+    line-height: 18px;
     border: 1px solid #e5e5e5;
 }
 .pager-button-active {
