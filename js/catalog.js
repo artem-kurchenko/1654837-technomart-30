@@ -13,7 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
             let cartSpan = document.querySelector(".cart-item span");
             cartSpan.innerHTML = `Корзина: ${cartCounter}`;
             let cartItem = document.querySelector(".cart-item");
-            if (cartCounter > 1 && cartItem && !cartItem.classList.contains("item-active"))
+            if (cartCounter > 0 && cartItem && !cartItem.classList.contains("item-active"))
                 cartItem.classList.add("item-active");
         })
     })
@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
             let bookmarkSpan = document.querySelector(".bookmark-item span");
             bookmarkSpan.innerHTML = `Закладки: ${bookmarkCounter}`;
             let bookmarkItem = document.querySelector(".bookmark-item");
-            if (bookmarkCounter > 1 && bookmarkItem && !bookmarkItem.classList.contains("item-active"))
+            if (bookmarkCounter > 0 && bookmarkItem && !bookmarkItem.classList.contains("item-active"))
                 bookmarkItem.classList.add("item-active");
         })
     })
