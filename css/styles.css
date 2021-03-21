@@ -868,6 +868,10 @@ img {
 
 .services-desc-list p {
     padding-top: 0px;
+    margin-top: 25px;
+}
+.services-desc-list p.content-guarantee {
+
     margin-top: 15px;
 }
 .section-partners {
